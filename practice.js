@@ -128,7 +128,19 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 //Code Here
-
+var divider=(numbersArray)=>{
+  let evensArray=[];
+  let oddsArray=[];
+  let doubleArray= evensArray.concat(oddsArray);
+  for (let i=0;i<numbersArray.length;i++){
+    if(numbersArray[i]%2===0){
+      evensArray.push(numbersArray[i])
+    } else {
+      oddsArray.push(numbersArray[i])
+    }
+  }
+  return doubleArray;
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -149,6 +161,17 @@ var getRandomArbitrary = function() {
 */
 
 //Code Here
+var finder=(arr)=>{
+  //let randomNumber=getRandomArbitrary();
+  for(let i=0;i<arr.length;i++){
+    if(arr[i]===getRandomArbitrary){
+      return true;
+    } else {
+      return false;
+    }
+  }
+  
+}
 
 
 
@@ -178,7 +201,12 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
+var removeItem=(myGroceryList,item)=>{
 
+}
+var addItem=(myGroceryList,item)=>{
+
+}
 
 
 ////////// PROBLEM 9 //////////
@@ -229,7 +257,14 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
-
+var longer=(array1,array2)=>{
+  // if(array1.length>array2.length){
+  //   return array1
+  // } else {
+  //   return array2
+  // }
+  return array1.length>array2.length?array1:array2
+}
 
 
 /*
@@ -241,7 +276,29 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
+var both=(arr1,arr2)=>{
+  let array=[]
+//     if(arr1.length>arr2.length){
+//       for(let i=0;i<arr1.length;i++){
+//         if(arr2.includes(arr1[i])){
+//           array.push(arr1[i])
+//         }
+//   }
+// } else {
+//       for (let i = 0; i < arr2.length; i++) {
+//         if (arr1.includes(arr2[i])) {
+//           array.push(arr2[i])
+// }
+//       }
+//     }
 
+for (let i=0; i<arr1.length;i++){
+  if (arr2.indexOf(arr1[i])!==-1){
+    array.push(arr1[i])
+  }
+}
+return array
+}
 
 
 ////////// PROBLEM 12 //////////
